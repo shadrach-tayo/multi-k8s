@@ -1,7 +1,7 @@
 # build deployment images and push to docker
 docker build -t shadrach19/multi-client:lastest -t shadrach19/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t shadrach19/multi-server:lastest -f -t shadrach19/multi-server:$SHA ./server/Dockerfile ./server
-docker build -t shadrach19/multi-worker:lastest -f -t shadrach19/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t shadrach19/multi-server:lastest  -t shadrach19/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t shadrach19/multi-worker:lastest  -t shadrach19/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push shadrach19/multi-client:lastest
 docker push shadrach19/multi-server:lastest
