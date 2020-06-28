@@ -13,6 +13,6 @@ docker push shadrach19/multi-worker:$SHA
 
 # start kubernetes using k8s folder
 kubectl apply -f k8
-kubectl set image deployments/server-deployment server=shadrach19/multi-server:$SHA
-kubectl set image deployments/client-deployment server=shadrach19/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=shadrach19/multi-worker:$SHA
+kubectl set image deployments/server-deployment multi-server=shadrach19/multi-server:$SHA
+kubectl set image deployments/client-deployment multi-client=shadrach19/multi-client:$SHA
+kubectl set image deployments/worker-deployment multi-worker=shadrach19/multi-worker:$SHA
