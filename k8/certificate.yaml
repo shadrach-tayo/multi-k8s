@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: domain.com
+  commonName: 35.223.137.134
   dnsNames:
-  - domain.com
-  - www.domain.com    
+  - 35.223.137.134
+  - www.35.223.137.134   
   acme:
     config:
     - http01:
         ingressClass: nginx
     domains:
-    - domain.com
-    - www.domain.com
+    - 35.223.137.134
+    - www.35.223.137.134
